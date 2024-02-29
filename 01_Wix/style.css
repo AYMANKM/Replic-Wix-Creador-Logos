@@ -72,10 +72,7 @@ header button a {
 @media screen and (min-width: 760px) {
   header {
     min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
   }
 
   header .logo {
@@ -105,10 +102,7 @@ header button a {
 @media screen and (min-width: 900px) {
   header {
     min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
   }
   /*header .logo{
         position: absolute;
@@ -143,10 +137,12 @@ header button a {
   }
 
   header h1 {
-    font-size: 70px;
+    font-size: 72px;
+    max-width: 70%;
   }
   header p {
-    font-size: 30px;
+    font-size: 27px;
+    max-width: 70%;
   }
   header h1,
   p,
