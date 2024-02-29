@@ -39,6 +39,9 @@ header p {
   padding: 0px 10px;
   text-align: center;
 }
+
+
+
 header h1,
 p {
   color: var(--color-primary);
