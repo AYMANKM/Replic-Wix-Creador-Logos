@@ -11,7 +11,7 @@ body {
 :root {
   --color-primary: #ffffff;
   --color-texto: #20303c;
-  --bg-button: #733CA6;
+  --bg-button: #733ca6;
 }
 
 header {
@@ -23,6 +23,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(5px 5px 5px grey);
 }
 
 header .logo {
@@ -106,9 +107,6 @@ header button a {
     min-height: 700px;
   }
 
-  
-
-  
   /*header .logo{
         position: absolute;
         top: 20px;
@@ -161,13 +159,12 @@ header button a {
 
 /*Aqui empieza la section*/
 section {
-  margin: 7rem 1rem ;
+  margin: 7rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  
 }
 
 .textos {
@@ -210,7 +207,6 @@ article p {
 }
 .textos img {
   max-width: 100px;
-  
 }
 
 .article-2 h3 {
@@ -221,15 +217,13 @@ article p {
   max-width: 140px;
 }
 
-
 section button {
   padding: 15px 30px;
   border: none;
   border-radius: 5rem;
   background-color: var(--bg-button);
   margin-top: 2.5rem;
-  filter: drop-shadow(5px 5px 5px #20303c );
-
+  filter: drop-shadow(5px 5px 5px #20303c);
 }
 
 section button:hover {
@@ -238,87 +232,70 @@ section button:hover {
   opacity: 0.9;
 }
 
-
-
 section button a {
   text-decoration: none;
   color: var(--color-primary);
   font-size: 20px;
-  
 }
 
-
-
-@media screen and (max-width:1027px){
-  section h1{
+@media screen and (max-width: 1027px) {
+  section h1 {
     font-size: 60px;
-
   }
   section article {
+    /*funciona sólo cuando se lo aplicas al elemento que quieras centrar, no funciona con el padre del hijo*/
     margin: auto;
   }
 }
 
-@media screen and (max-width:967px){
-  
-  section h1{
+@media screen and (max-width: 967px) {
+  section h1 {
     font-size: 55px;
   }
 }
-@media screen and (max-width:811px){
-  section h1{
+@media screen and (max-width: 811px) {
+  section h1 {
     font-size: 50px;
   }
 }
 
-
-@media screen and (max-width:681px){
-  section h1{
+@media screen and (max-width: 681px) {
+  section h1 {
     font-size: 45px;
   }
 }
 
-@media screen and (max-width:616px){
-  section h1{
+@media screen and (max-width: 616px) {
+  section h1 {
     font-size: 40px;
   }
 }
 
-@media screen and (max-width:551px){
-  section h1{
+@media screen and (max-width: 551px) {
+  section h1 {
     font-size: 35px;
   }
 }
 
-@media screen and (max-width:487px){
-  section h1{
+@media screen and (max-width: 487px) {
+  section h1 {
     font-size: 30px;
   }
 }
-@media screen and (max-width:425px){
-  article h3{
+@media screen and (max-width: 425px) {
+  article h3 {
     font-size: 25px;
     background-color: red;
   }
 }
-@media screen and (max-width:422px){
-  section h1{
+@media screen and (max-width: 422px) {
+  section h1 {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width:356px){
-  section h1{
+@media screen and (max-width: 356px) {
+  section h1 {
     font-size: 24px;
-
-  
-    
   }
 }
-
-
-
-
-
-
-
