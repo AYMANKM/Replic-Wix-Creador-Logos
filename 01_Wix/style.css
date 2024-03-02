@@ -154,3 +154,11 @@ header button a {
     bottom: 4rem;
   }
 }
+
+
+
+section{
+  display: flex;
+  
+  color: black !important;
+}
