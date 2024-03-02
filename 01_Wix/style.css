@@ -147,12 +147,14 @@ header button a {
     font-size: 27px;
     max-width: 70%;
   }
-  header h1,
+
+  /*Con este código me Salta el parrafo mal, al crear nuevas secciones, es lo hace la position relative*/
+  /*header h1,
   p,
   button {
     position: relative;
     bottom: 4rem;
-  }
+  }*/
 }
 
 
