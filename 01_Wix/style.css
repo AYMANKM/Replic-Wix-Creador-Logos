@@ -10,6 +10,7 @@ body {
 
 :root {
   --color-primary: #ffffff;
+  --color-texto: #20303C;
 }
 
 header {
@@ -158,5 +159,82 @@ header button a {
 }
 
 
+/*Aqui empieza la section*/
+section{
+  
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 9rem;
+  border: 3px solid blue;
+  
+  
 
+}
+
+.textos{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  
+  
+  
+}
+
+section h1{
+  color: red;
+  font-size: 72px;
+  color: var(--color-texto);
+  font-weight: 900;
+  
+}
+
+article{
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 1rem 1rem;
+  flex-grow: 1;
+  
+  
+  
+}
+
+article h3{
+  color: var(--color-texto);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  max-width: 70%;
+ 
+  
+}
+article p{
+  color:var(--color-texto) ;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  max-width: 80%;
+
+}
+.textos img{
+  max-width: 100px;
+}
+
+.article-2 h3{
+  max-width: 80%;
+}
+
+
+.article-3 img{
+  max-width: 140px;
+  
+}
 
