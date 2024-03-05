@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" href="https://www.wix.com/favicon.ico" />
     <title>Creador de Logos | Diseña tu propio logo</title>
   </head>
@@ -21,7 +22,7 @@
     <section>
       <h1>Por qué elegir Wix Logo</h1>
       <div class="textos">
-        <article>
+        <article class="article-1">
           <img
             src="https://static.wixstatic.com/media/467b46_5d8571a13aa7474ba0015eed0c8e64b7~mv2.png/v1/fill/w_137,h_77,al_c,lg_1,q_85,enc_auto/Diamobds.png"
             alt="logo diamante"
@@ -50,16 +51,36 @@
           <h3>Kit para redes</h3>
           <p>Usa tu flamante logo en todas tus redes sociales.</p>
         </article>
-        <article>
+        <article class="article-4">
           <img
             src="https://static.wixstatic.com/media/375882_c9932360b69d42d3a5ad0fb0715febec~mv2.png/v1/fill/w_91,h_84,al_c,lg_1,q_85,enc_auto/375882_c9932360b69d42d3a5ad0fb0715febec~mv2.png"
             alt="logo"
           />
           <h3>Guía de marca</h3>
-          <p>La consistencia es la clave de una marca sólida. Te ayudamos a lograrlo.</p>
+          <p>
+            La consistencia es la clave de una marca sólida. Te ayudamos a
+            lograrlo.
+          </p>
         </article>
       </div>
       <button><a href="">Obtén tu logo</a></button>
     </section>
   </body>
+  <script>
+    ScrollReveal({ 
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay:400
+
+     });
+
+     ScrollReveal().reveal('header', { delay: 500, origin: 'top'});
+     ScrollReveal().reveal('.article-1', { delay: 500, origin: 'left'});
+     ScrollReveal().reveal('.article-2', { delay: 500, origin: 'right'});
+     ScrollReveal().reveal('.article-3', { delay: 500, origin: 'left'});
+     ScrollReveal().reveal('.article-4', { delay: 500, origin: 'right'});
+     ScrollReveal().reveal('button', { delay: 500, origin: 'bottom'});
+     ScrollReveal().reveal('section h1', { delay: 700, origin: 'top'});
+  </script>
 </html>
