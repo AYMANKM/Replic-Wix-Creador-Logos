@@ -49,17 +49,18 @@ p {
 }
 
 header button {
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
   border-radius: 5rem;
   background-color: var(--color-primary);
   margin-top: 2.5rem;
   box-shadow: 0 0 5px #bf50bf;
+  transition: 2s;
 }
 
 header button:hover {
   transform: translateY(-5px);
-  transition: 0.4s;
+  color: var(--color-primary);
   cursor: pointer;
   background-color: transparent;
 }
@@ -73,6 +74,7 @@ header button a {
   font-size: 20px;
 }
 
+/* Media Queries Para el Header*/
 @media screen and (min-width: 760px) {
   header {
     min-height: 500px;
@@ -158,8 +160,8 @@ header button a {
 }
 
 /*Aqui empieza la section*/
-section {
-  margin: 7rem 1rem;
+.section-1 {
+  margin: 10rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +177,7 @@ section {
   flex-wrap: wrap;
 }
 
-section h1 {
+.section-1 h1 {
   font-size: 72px;
   color: var(--color-texto);
   font-weight: 900;
@@ -218,7 +220,7 @@ article p {
   max-width: 140px;
 }
 
-section button {
+.section-1 button {
   padding: 15px 30px;
   border: none;
   border-radius: 5rem;
@@ -227,20 +229,20 @@ section button {
   filter: drop-shadow(5px 5px 5px #20303c);
 }
 
-section button:hover {
+.section-1 button:hover {
   cursor: pointer;
   transition: 0.4s;
   opacity: 0.9;
 }
 
-section button a {
+.section-1 button a {
   text-decoration: none;
   color: var(--color-primary);
   font-size: 20px;
 }
 
 @media screen and (max-width: 1027px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 60px;
   }
   section article {
@@ -250,36 +252,36 @@ section button a {
 }
 
 @media screen and (max-width: 967px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 55px;
   }
 }
 @media screen and (max-width: 811px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 681px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 45px;
   }
 }
 
 @media screen and (max-width: 616px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 551px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 487px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 30px;
   }
 }
@@ -290,13 +292,96 @@ section button a {
   }
 }
 @media screen and (max-width: 422px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 356px) {
-  section h1 {
+  .section-1 h1 {
     font-size: 24px;
   }
+}
+
+
+/*Section 2*/
+
+
+.section-2{
+  
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+
+.section-2 h1{
+  text-align: center;
+  font-size: 80px;
+  max-width: 100%;
+  font-weight: 900;
+  
+}
+
+@media screen and(max-width:768px){
+  .section-2 h1{
+    font-size: 20px;
+  }
+}
+
+.section-2 button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--bg-button);
+  margin-top: 2.5rem;
+  filter: drop-shadow(5px 5px 5px #20303c);
+  font-size: 23px;
+}
+
+.section-2 button:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.9;
+}
+
+footer{
+  background-color: #EFF1F2;
+  padding: 4rem 3rem ;
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+footer h2{
+  color: #888;
+  font-size: 25px;
+}
+
+footer h2 span{
+  color: black;
+}
+
+footer .p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45rem;
+}
+footer .p ul{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+footer .p p{
+  color: black;
 }
